@@ -1,0 +1,39 @@
+
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+}
+
+.left ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+li{
+    margin: 20px;
+    list-style-type: none;
+}
+
+
+.right img{
+width: 200px;
+}
+
+
+#table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: yellowgreen;
+
+}
