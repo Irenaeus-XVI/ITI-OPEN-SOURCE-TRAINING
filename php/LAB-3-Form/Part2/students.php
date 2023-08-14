@@ -10,6 +10,7 @@ $students = [
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Student Table</title>
     <style>
@@ -18,7 +19,8 @@ $students = [
             width: 50%;
         }
 
-        th, td {
+        th,
+        td {
             border: 1px solid black;
             padding: 8px;
             text-align: center;
@@ -35,6 +37,7 @@ $students = [
         }
     </style>
 </head>
+
 <body>
     <h2>Student Table</h2>
     <table>
@@ -43,15 +46,16 @@ $students = [
             <th>Email</th>
             <th>Status</th>
         </tr>
-        <?php foreach ($students as $student): ?>
+        <?php foreach ($students as $student) : ?>
             <tr>
                 <td><?php echo $student['name']; ?></td>
                 <td><?php echo $student['email']; ?></td>
-                <td <?php if ($student['status'] === 'OS'): ?>class="os-status"<?php endif; ?>>
+                <td <?php if ($student['status'] === 'OS') : ?>class="os-status" <?php endif; ?>>
                     <?php echo $student['status']; ?>
                 </td>
             </tr>
         <?php endforeach; ?>
     </table>
 </body>
+
 </html>
